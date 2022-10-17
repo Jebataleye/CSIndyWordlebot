@@ -23,7 +23,8 @@ previousguesses = []
 c = open("completed.txt","a")
 numguess = 1
 guessedletters = ""
-foundletters = [None,None,None,None,None]
+greenletters = [None,None,None,None,None]
+yellowletters = [None,None,None,None,None]
 while complete != True:
     guess = getguess()
     print(numguess)
@@ -42,10 +43,10 @@ while complete != True:
     else:
         for place in range(5):
             if guess[place] == word[place]:
-                foundletters[place] = [word[place],"g"]
+                greenletters[place] = word[place]
                 letcolors[place] = "green"
             elif guess[place] in word:
-                foundletters[place] = [word[place],"y"]
+                yellowletters[place] = guess[place]
                 letcolors[place] = "yellow"
             else:
                 letcolors[place] = "grey"
@@ -56,7 +57,9 @@ while complete != True:
     for let in guess:
         if let not in guessedletters:
             guessedletters+=let
-    c.write(numguess+"-"+guessedletters+"-")
+    print(greenletters)
+    print(yellowletters)
+    print(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4]))
 f = open("incomplete.txt","w")
 
 
