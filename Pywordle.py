@@ -27,12 +27,8 @@ greenletters = [None,None,None,None,None]
 yellowletters = [None,None,None,None,None]
 while complete != True:
     guess = getguess()
+    c.write(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess+"\n")
     print(numguess)
-    if numguess == 6:
-        print("The word was",word)
-        complete = True
-        break
-    numguess+=1
     coloredguess = ""
     letcolors = [None,None,None,None,None]
     word = word.lower()
@@ -40,6 +36,7 @@ while complete != True:
         print("yay")
         letcolors = ["green" for x in letcolors]
         complete = True
+        break
     else:
         for place in range(5):
             if guess[place] == word[place]:
@@ -50,6 +47,13 @@ while complete != True:
                 letcolors[place] = "yellow"
             else:
                 letcolors[place] = "grey"
+    if numguess == 6:
+        print("The word was",word)
+        complete = True
+        break
+    
+    
+    
     for g in previousguesses:
         print(colored(g[0][0],g[1][0]),colored(g[0][1],g[1][1]),colored(g[0][2],g[1][2]),colored(g[0][3],g[1][3]),colored(g[0][4],g[1][4]))
     print(colored(guess[0],letcolors[0]),colored(guess[1],letcolors[1]),colored(guess[2],letcolors[2]),colored(guess[3],letcolors[3]),colored(guess[4],letcolors[4]))
@@ -59,7 +63,9 @@ while complete != True:
             guessedletters+=let
     print(greenletters)
     print(yellowletters)
-    print(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4]))
+    print(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess)
+    numguess+=1
+c.close()
 f = open("incomplete.txt","w")
 
 

@@ -13,3 +13,6 @@ f.close()
 i = open("incomplete.txt","w")
 for x in words:
     i.write(x+"\n")
+i.close()
+c = open("completed.txt","w")
+c.write("")
