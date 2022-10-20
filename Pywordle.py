@@ -7,13 +7,14 @@ with open("incomplete.txt","r") as f:
 
 #picks a random word and cleans it up
 line = random.randint(0,len(lines))
-print (line)
+#print (line)
 word = lines[line]
 word = word[:5]
 f.close
 #prints the word (for debugging)
-print(word)
-
+#print(word)
+p = open("possibleguesses.txt","r")
+possibleguesses = p.readlines()
 #makes sure that the users guess is valid (doesn't check if the guess is a real word like regular wordle)
 def getguess():
     while True:
@@ -52,7 +53,7 @@ while complete != True:
     c.write(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess+"\n")
     
     #debug prints which guess the user is on
-    print(numguess)
+    #print(numguess)
 
     #stores which colors each letter should be
     letcolors = [None,None,None,None,None]
@@ -78,7 +79,7 @@ while complete != True:
             #checks if letter is in the word
             elif guess[place] in word:
                 #stores the matched letter to the corresponding place in green letters:
-                if yellowletters[place] != None:
+                if yellowletters[place] != None and guess[place] not in yellowletters[place]:
                     yellowletters[place] += guess[place]
                 else:
                     yellowletters[place] = guess[place]
@@ -111,11 +112,11 @@ while complete != True:
         if let not in guessedletters:
             guessedletters+=let
     #debug prints the green and yellow letters
-    print(greenletters)
-    print(yellowletters)
+    #print(greenletters)
+    #print(yellowletters)
     
     #debug prints the data sent to the txt file
-    print(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess)
+    #print(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess)
     
     #adds 1 to the total number of guesses
     numguess+=1
