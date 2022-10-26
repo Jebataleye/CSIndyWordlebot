@@ -35,3 +35,9 @@ i.close()
 #opens the completed file and wipes it
 c = open("completed.txt","w")
 c.write("")
+p = open("possibleguesses.txt","w")
+plines = p.readlines()
+for pline in plines:
+    if len(pline)>5:
+        pline = pline[:4]
+p.write(plines)

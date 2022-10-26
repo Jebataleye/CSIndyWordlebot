@@ -1,4 +1,5 @@
 import random
+from turtle import pos
 #colored text
 from termcolor import colored
 #opens the list of possible wordle words
@@ -15,11 +16,14 @@ f.close
 #print(word)
 p = open("possibleguesses.txt","r")
 possibleguesses = p.readlines()
+for ind in range(len(possibleguesses)):
+    possibleguesses[ind] = possibleguesses[ind].replace("\n","")
+
 #makes sure that the users guess is valid (doesn't check if the guess is a real word like regular wordle)
 def getguess():
     while True:
         guess = str(input("Enter your guess: "))
-        if len(guess)==5 and guess.isalpha():
+        if len(guess)==5 and guess.isalpha() and guess.lower() in possibleguesses:
             return guess
             break
         else:
