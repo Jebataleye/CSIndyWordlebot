@@ -39,3 +39,8 @@
 3-iratemound-None-None-u-None-None-m-None-None-None-None-fumes
 4-iratemoundfs-None-None-u-None-None-m-u-m-None-None-ghoul
 5-iratemoundfsghl-None-None-u-None-None-m-u-m-u-l-plump
+1--None-None-None-None-None-None-None-None-None-None-irate
+2-irate-None-r-a-None-e-None-None-None-None-None-grace
+3-irategc-None-r-a-None-e-None-None-None-None-None-plane
+4-irategcpln-None-r-a-None-e-None-None-None-None-None-mound
+5-irategcplnmoud-None-r-a-None-e-m-None-None-None-None-frame
