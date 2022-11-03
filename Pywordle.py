@@ -11,7 +11,7 @@ line = random.randint(0,len(lines))
 #print (line)
 word = lines[line]
 word = word[:5]
-f.close
+f.close()
 #prints the word (for debugging)
 #print(word)
 p = open("possibleguesses.txt","r")
