@@ -1,3 +1,5 @@
+from colorama import init
+init()
 import random
 from turtle import pos
 #colored text
@@ -91,7 +93,7 @@ while complete != True:
                 letcolors[place] = "yellow"
             else:
                 #says that that letter's color should be gray when printed
-                letcolors[place] = "grey"
+                letcolors[place] = "white"
     
     
     
