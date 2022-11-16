@@ -56,8 +56,10 @@ while complete != True:
     guess = getguess()
 
     #writes the user's guess to the completed file along with: which guess they were on, what letters they had guessed, which letters were green and yellow, and their guess
-    c.write(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess+"-"+str(possibleguesses.index(guess.lower()))+"\n")
-    
+    if guess != word.lower():
+        c.write(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess+"-"+str(possibleguesses.index(guess.lower()))+"-"+"0"+"\n")
+    if guess == word.lower():
+        c.write(str(numguess)+"-"+guessedletters+"-"+str(greenletters[0])+"-"+str(greenletters[1])+"-"+str(greenletters[2])+"-"+str(greenletters[3])+"-"+str(greenletters[4])+"-"+str(yellowletters[0])+"-"+str(yellowletters[1])+"-"+str(yellowletters[2])+"-"+str(yellowletters[3])+"-"+str(yellowletters[4])+"-"+guess+"-"+str(possibleguesses.index(guess.lower()))+"-"+"1"+"\n")
     #debug prints which guess the user is on
     #print(numguess)
 
