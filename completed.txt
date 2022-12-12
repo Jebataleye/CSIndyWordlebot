@@ -1,0 +1,15 @@
+1--None-None-None-None-None-None-None-None-None-None-irate-12398-0
+2-irate-None-None-None-None-None-i-r-a-None-None-rains-12671-0
+3-iratens-None-None-None-None-None-ir-ra-ai-None-None-cloud-7133-0
+4-iratenscloud-c-None-None-None-None-ir-ra-ai-None-None-circa-5326-0
+5-iratenscloud-c-i-None-None-None-ir-ra-air-c-a-pocky-466-0
+6-iratenscloudpky-c-i-None-None-None-ir-ra-airc-c-a-cigar-7122-1
+1--None-None-None-None-None-None-None-None-None-None-irate-12398-0
+2-irate-None-r-None-None-None-None-None-a-None-e-mound-7998-0
+3-iratemound-None-r-None-n-None-None-None-a-None-e-arena-12266-1
+1--None-None-None-None-None-None-None-None-None-None-irate-12398-0
+2-irate-None-None-None-None-None-None-r-None-None-e-mound-7998-0
+3-iratemound-None-o-None-None-None-None-r-None-None-e-ropes-10754-0
+4-iratemoundps-None-o-None-e-None-r-r-None-None-e-boxer-843-0
+5-iratemoundpsbx-None-o-None-e-r-r-r-None-None-e-mower-4571-0
+6-iratemoundpsbxw-None-o-None-e-r-r-r-None-None-e-gofer-5727-0
