@@ -13,3 +13,8 @@
 4-iratemoundps-None-o-None-e-None-r-r-None-None-e-boxer-843-0
 5-iratemoundpsbx-None-o-None-e-r-r-r-None-None-e-mower-4571-0
 6-iratemoundpsbxw-None-o-None-e-r-r-r-None-None-e-gofer-5727-0
+1--None-None-None-None-None-None-None-None-None-None-irate-12398-0
+2-irate-None-None-a-None-None-None-None-None-None-None-mound-7998-0
+3-iratemound-None-None-a-None-None-None-None-None-None-None-place-6242-0
+4-iratemoundplc-None-l-a-None-None-None-None-None-c-None-claps-5332-0
+5-iratemoundplcs-c-l-a-None-s-None-None-None-c-None-class-9567-1
