@@ -2,6 +2,7 @@ from colorama import init
 init()
 import random
 from turtle import pos
+import time
 #colored text
 from termcolor import colored
 #opens the list of possible wordle words
@@ -141,3 +142,4 @@ lines.pop(line)
 #rewrites the file without the guessed word
 for x in lines:
     f.write(x)
+time.sleep(8)
