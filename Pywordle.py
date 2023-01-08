@@ -142,4 +142,3 @@ lines.pop(line)
 #rewrites the file without the guessed word
 for x in lines:
     f.write(x)
-time.sleep(8)
