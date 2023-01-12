@@ -39,7 +39,7 @@ complete = False
 previousguesses = []
 
 #opens the file holding completed guesses
-c = open("completed.txt","a")
+c = open("temp.txt","a")
 
 #counts how many guesses the user has made
 numguess = 1
